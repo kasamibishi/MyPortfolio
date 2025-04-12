@@ -69,6 +69,8 @@ h3
 #home
 {
   display: flex;
+  border: solid #007FFF;
+  border-width: 0px 0px 3px;
   background-color: rgb(30, 30, 30);
   width: 100%;
   height: 60rem;
@@ -139,9 +141,28 @@ h3
 #about
 {
   position: relative;
+  border: solid #007FFF;
+  border-width: 0px 0px 3px;
   width: 100%;
-  height: 55rem;
+  height: 60rem;
   background-color: rgb(30, 30, 30);
+}
+
+#bouthead
+{
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+
+#bouttitle
+{
+  color: antiquewhite;
+  font-size: 2.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 #boutsec
@@ -154,34 +175,34 @@ h3
   background-color: rgb(39, 39, 39);
   width: 85rem;
   height: 35rem;
-  border-radius: 6%;
+  border-radius: 50px;
 }
 
 #boutl
 {
   display: block;
   position: relative;
-  height: 100%;
+  height: 90%;
   width: 45%;
 }
 
 #meagain
 {
   position: absolute;
-  width: 70%;
+  width: 60%;
   border-radius: 50%;
   -webkit-box-shadow:0px 0px 50px 30px rgba(0,128,255,0.75);
   -moz-box-shadow: 0px 0px 50px 30px rgba(0,128,255,0.75);
   box-shadow: 0px 0px 50px 30px rgba(0,128,255,0.75);
   left: 50%;
-  top: 50%;
+  top: 62%;
   transform: translateX(-50%) translateY(-50%)
 }
 
 #boutr
 {
   position: relative;
-  height: 100%;
+  height: 90%;
   width: 55%;
 }
 
@@ -189,11 +210,136 @@ h3
 {
   position: absolute;
   width: 50rem;
-  height: 25rem;
+  height: 15rem;
+  left: 50%;
+  top: 62%;
+  transform: translateX(-50%) translateY(-50%);
+  color: antiquewhite;
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+/*Skills*/
+
+#skills
+{
+  display: flex;
+  border: solid #007FFF;
+  border-width: 0px 0px 3px;
+  background-color: rgb(30, 30, 30);
+  position: relative;
+  width: 100%;
+  height: 60rem;
+  padding-top: 4.5rem;
+}
+
+#title
+{
+  position: relative;
+  width: 100%;
+  height: 8rem;
+}
+
+#skilltitle
+{
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   color: antiquewhite;
-  font-size: 1.6rem;
-  font-style: italic;
+  font-size: 2.5rem;
+}
+
+#container
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 35rem;
+  row-gap: 5rem;
+  column-gap: 15rem
+}
+
+.skill
+{
+  position: relative;
+  width: 15rem;
+  height: 8em;
+  border: solid 3px #007FFF;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.sname
+{
+  position: absolute;
+  left: 73%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+}
+
+.logo
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.name{
+  width: 0%;
+  transition: 0.4s ease-in-out;
+}
+
+.slogo
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 5rem;
+  transition: 0.4s ease-in-out;
+}
+
+.skill:hover
+{
+  background-color: #007FFF;
+
+  .sname
+  {
+    color: antiquewhite;
+    opacity: 100%;
+  }
+
+  .slogo
+  {
+    position: relative;
+  }
+
+  .logo
+  {
+    width: 50%;
+  }
+  .name
+  {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/*Contact Me*/
+#contact
+{
+  background-color: rgb(30, 30, 30);
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 60rem;
 }
