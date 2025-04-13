@@ -12,6 +12,8 @@ header
   position: fixed;
   width: 100%;
   z-index: 1;
+  border: solid #007FFF;
+  border-width: 0px 0px 3px;
 }
 
 nav
@@ -69,8 +71,6 @@ h3
 #home
 {
   display: flex;
-  border: solid #007FFF;
-  border-width: 0px 0px 3px;
   background-color: rgb(30, 30, 30);
   width: 100%;
   height: 60rem;
@@ -113,6 +113,7 @@ h3
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 55%;
+  border: solid 5px #007FFF;
   border-radius: 50%;
   -webkit-box-shadow:0px 0px 50px 30px rgba(0,128,255,0.75);
   -moz-box-shadow: 0px 0px 50px 30px rgba(0,128,255,0.75);
@@ -136,29 +137,62 @@ h3
   background-color: #007FFF;
 }
 
+#socials
+{
+  display: flex;
+  width: 100%;
+}
+
+.social
+{
+  width: 6rem;
+  margin-right: 4rem;
+}
+
+.soc
+{
+  width: 6rem;
+}
+
+.social2
+{
+  width: 6rem;
+}
+
+.soc2
+{
+  width: 6rem;
+  border: solid 2px #007FFF;
+  border-radius: 50%
+}
+
+.soc
+{
+  border: solid 2px #007FFF;
+  border-radius: 50%
+}
+
 /*About Me*/
 
 #about
 {
+  display: block;
   position: relative;
-  border: solid #007FFF;
-  border-width: 0px 0px 3px;
   width: 100%;
   height: 60rem;
   background-color: rgb(30, 30, 30);
 }
 
-#bouthead
+#bouttitle
 {
   position: relative;
   width: 100%;
-  height: 20%;
+  height: 5rem;
+  padding-top: 20rem;
 }
 
-#bouttitle
+#abouttitle
 {
-  color: antiquewhite;
-  font-size: 2.5rem;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -182,7 +216,7 @@ h3
 {
   display: block;
   position: relative;
-  height: 90%;
+  height: 100%;
   width: 45%;
 }
 
@@ -190,33 +224,35 @@ h3
 {
   position: absolute;
   width: 60%;
+  border: solid 5px #007FFF;
   border-radius: 50%;
   -webkit-box-shadow:0px 0px 50px 30px rgba(0,128,255,0.75);
   -moz-box-shadow: 0px 0px 50px 30px rgba(0,128,255,0.75);
   box-shadow: 0px 0px 50px 30px rgba(0,128,255,0.75);
   left: 50%;
-  top: 62%;
+  top: 50%;
   transform: translateX(-50%) translateY(-50%)
 }
 
 #boutr
 {
   position: relative;
-  height: 90%;
-  width: 55%;
+  height: 100%;
+  width: 60%;
 }
 
 #text
 {
   position: absolute;
   width: 50rem;
-  height: 15rem;
+  height: fit-content;
   left: 50%;
-  top: 62%;
+  top: 50%;
   transform: translateX(-50%) translateY(-50%);
   color: antiquewhite;
   font-size: 1.7rem;
   font-style: italic;
+  padding-right: 4rem;
 }
 
 /*Skills*/
@@ -224,8 +260,6 @@ h3
 #skills
 {
   display: flex;
-  border: solid #007FFF;
-  border-width: 0px 0px 3px;
   background-color: rgb(30, 30, 30);
   position: relative;
   width: 100%;
@@ -254,7 +288,7 @@ h3
 {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   transform: translateX(-50%) translateY(-50%);
   display: grid;
   grid-template-columns: auto auto auto;
@@ -341,5 +375,121 @@ h3
   position: relative;
   display: flex;
   width: 100%;
-  height: 60rem;
+  height: 55rem;
+  text-align: center;
+}
+
+#contactcon
+{
+  height: 30rem;
+  width: 50rem;
+  padding-top: 4.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+p
+{
+  color: antiquewhite;
+}
+
+#contacttitle
+{
+  font-size: 3rem;
+  color: antiquewhite;
+  margin-bottom: 5rem;
+  transition: 0.4s ease-in-out;
+}
+
+#contacts
+{
+  display: flex;
+  width: 50rem;
+}
+
+.contact
+{
+  position: relative;
+  margin: auto;
+  height: 11rem;
+  width: 11rem;
+  border: solid 2px #007FFF;
+  border-radius: 50%;
+  transition: 0.4s ease-in-out;
+}
+
+.conlogo
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 10rem;
+  transition: 0.4s ease-in-out;
+}
+
+.condetail
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: antiquewhite;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.contact:hover
+{
+  background-color: #007FFF;
+  border-radius: 15%;
+  width: 10rem;
+  height: 10rem;
+
+  #contacttitle
+  {
+    margin-bottom: 1rem;
+  }
+
+  .conlogo
+  {
+    top: 35%;
+    width: 5rem;
+  }
+
+  .condetail
+  {
+    top: 80%;
+    opacity: 100;
+  }
+}
+
+.condetail:hover
+{
+  color: goldenrod;
+}
+/*Footer*/
+
+footer
+{
+  position: relative;
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+  height: 4.5rem;
+  border: solid #007FFF;
+  border-width: 3px 0px 0px;
+}
+
+#footer
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 1.3rem;
 }
