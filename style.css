@@ -621,6 +621,10 @@ footer
   {
     font-size: 1.2rem;
   }
+  .skill
+  {
+    width: 13.5rem;
+  }
 }
 
 @media screen and (max-width: 970px)
