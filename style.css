@@ -1,6 +1,6 @@
 *
 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -35,7 +35,7 @@ nav
 {
   position: relative;
   padding-top: 9px;
-  padding-left: 22rem;
+  padding-left: 25rem;
   height: 100%;
   width: 70%;
 }
@@ -81,6 +81,12 @@ h3
   position: relative;
   width: 50%;
   height: 100%;
+}
+
+@keyframes examplel
+{
+  0% {width: 0px;}
+  100% {width: 50%;}
 }
 
 #con
@@ -300,7 +306,7 @@ h3
 .skill
 {
   position: relative;
-  width: 15rem;
+  width: 20rem;
   height: 8em;
   border: solid 3px #007FFF;
   border-radius: 10px;
@@ -413,9 +419,9 @@ p
 {
   position: relative;
   margin: auto;
-  height: 11rem;
-  width: 11rem;
-  border: solid 2px #007FFF;
+  height: 9rem;
+  width: 9rem;
+  border: solid 3px #007FFF;
   border-radius: 50%;
   transition: 0.4s ease-in-out;
 }
@@ -426,52 +432,21 @@ p
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 10rem;
-  transition: 0.4s ease-in-out;
-}
-
-.condetail
-{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 100%;
-  color: antiquewhite;
-  font-weight: 500;
-  text-decoration: none;
-  opacity: 0;
+  width: 9rem;
+  border-radius: 50%;
   transition: 0.4s ease-in-out;
 }
 
 .contact:hover
 {
-  background-color: #007FFF;
-  border-radius: 15%;
+  position: relative;
   width: 10rem;
   height: 10rem;
-
-  #contacttitle
-  {
-    margin-bottom: 1rem;
-  }
-
+  
   .conlogo
   {
-    top: 35%;
-    width: 5rem;
+    position: absolute;
   }
-
-  .condetail
-  {
-    top: 80%;
-    opacity: 100;
-  }
-}
-
-.condetail:hover
-{
-  color: goldenrod;
 }
 /*Footer*/
 
@@ -492,4 +467,205 @@ footer
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1800px) {
+  #navr
+  {
+    padding-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 1645px)
+{
+  #navr
+  {
+    padding-left: 5rem;
+  }
+
+  .skill
+  {
+    width: 16.5rem;
+  }
+}
+
+@media screen and (max-width: 1440px)
+{
+  #boutsec
+  {
+    width: 65rem;
+  }
+  #text
+  {
+    width: 40rem;
+  }
+  #bo
+  .links
+  {
+    font-size: 2rem;
+    padding: auto;
+  }
+  #navr
+  {
+    padding-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 1325px)
+{
+  #photo
+  {
+    width: 80%;
+  }
+  #homer
+  {
+    position: relative;
+    width: 40%;
+    height: 100%;
+  }
+
+  #navr
+  {
+    padding-top: 0.9rem;
+  }
+  .links
+  {
+    font-size: 1.8rem;
+  }
+  #container
+  {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%) translateY(-50%);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 35rem;
+    row-gap: 5rem;
+    column-gap: 10rem
+  }
+}
+
+@media screen and (max-width: 1200px)
+{
+  #homel
+  {
+    position: relative;
+    width: 60%;
+    height: 100%;
+  }
+  #me
+  {
+    font-size: 3rem;
+    color: antiquewhite;
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1145px)
+{
+  #navr
+  {
+    padding-top: 1rem;
+  }
+  .links
+  {
+    padding: 0px 1.5rem;
+  }
+  h3
+  {
+    font-size: 1.7rem;
+    color: antiquewhite;
+    position: absolute;
+    left: 6rem;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  #boutsec
+  {
+    width: 50rem;
+  }
+  #text
+  {
+    width: 45rem;
+    font-size: 1.7rem;
+    padding-right: 0rem;
+  }
+  #boutl
+  {
+    opacity: 0;
+    width: 0%;
+  }
+  #boutr
+  { 
+    width: 100%;
+  }
+  #container
+  {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%) translateY(-50%);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 35rem;
+    row-gap: 5rem;
+    column-gap: 5rem
+  }
+}
+
+@media screen and (max-width: 1020px)
+{
+  #footer
+  {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 970px)
+{
+  .links
+  {
+    padding: 0px 1rem;
+  }
+
+  #me
+  {
+    font-size: 2.5rem;
+  }
+  .social
+  {
+    width: 5rem;
+    margin-right: 2rem;
+  }
+  #footer
+  {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 915px)
+{
+  #container
+  {
+    grid-template-columns: auto auto;
+    row-gap: 2.5rem;
+    top: 49%;
+  }
+  .skill
+  {
+    width: 18rem;
+    height: 6.5rem;
+  }
+
+  h3
+  {
+    font-size: 1.3rem
+  }
+}
+
+@media screen and (max-width: 870px)
+{
+
 }
