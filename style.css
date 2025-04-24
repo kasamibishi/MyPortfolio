@@ -121,6 +121,11 @@ h3
   width: 55%;
   border: solid 5px #007FFF;
   border-radius: 50%;
+  transition: 0.4s ease-in-out;
+}
+
+#photo:hover
+{
   -webkit-box-shadow:0px 0px 50px 30px rgba(0,128,255,0.75);
   -moz-box-shadow: 0px 0px 50px 30px rgba(0,128,255,0.75);
   box-shadow: 0px 0px 50px 30px rgba(0,128,255,0.75);
@@ -232,12 +237,17 @@ h3
   width: 60%;
   border: solid 5px #007FFF;
   border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 0.4s ease-in-out;
+}
+
+#meagain:hover
+{
   -webkit-box-shadow:0px 0px 50px 30px rgba(0,128,255,0.75);
   -moz-box-shadow: 0px 0px 50px 30px rgba(0,128,255,0.75);
   box-shadow: 0px 0px 50px 30px rgba(0,128,255,0.75);
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%)
 }
 
 #boutr
@@ -671,5 +681,19 @@ footer
 
 @media screen and (max-width: 870px)
 {
+  .links
+  {
+    font-size: 1.5rem;
+  }
 
+  #text {
+    width: 30rem;
+    font-size: 1.7rem;
+    padding-right: 0rem;
+  }
+
+  #boutsec
+  {
+    width: 37rem;
+  }
 }
