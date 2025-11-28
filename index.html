@@ -5,180 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tablet.css">
 
+  <!--Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!--Header-->
-  <header>
-    <nav>
-      <div id="navl">
-        <h3>Kasam <span style="color: #007FFF;">Ibishi</span></h3>     
-      </div>
-      <div id="navr">
-        <a href="#home" class="links">Home</a>
-        <a href="#about" class="links">About Me</a>
-        <a href="#skills" class="links">Skills</a>
-        <a href="#contact" class="links">Contact Me</a>
-      </div>
-    </nav>
-  </header>
-  <!--Home-->
-  <div id="home">
-    <div id="homel">
-      <div id="con">
-        <h2 id="me">
-          Hello World, <br>
-          I'm Kasam Ibishi <br>
-          and I'm a <br>
-          <span style="color: #007FFF;">Full-Stack Developer.</span>
-          <div id="socials">
-            <a target="_blank" href="https://www.linkedin.com/in/kasamibishi/" class="social">
-              <img src="photos/logos/linkedin.png" alt="" class="soc">
-            </a>
-            <a target="_blank" href="https://github.com/kasamibishi" class="social">
-              <img src="photos/logos/github.png" alt="" class="soc">
-            </a>
-            <a target="_blank" href="https://www.tiktok.com/@kasam_ibishi" class="social">
-              <img src="photos/logos/tik-tok.png" alt="" class="soc">
-            </a>
-            <a target="_blank" href="https://x.com/kasam_ibishi" class="social2">
-              <img src="photos/logos/twitter.png" alt="" class="soc2">
-            </a>
-          </div>
-        </h2>
-        <a id="dwn" href="cv/Kasam_Ibishi_-_Full-Stack_Developer.pdf" download>Download CV</a>
-      </div>
+  <!-- Nav -->
+  <nav>
+    <div id="l-nav">
+      <h1 id="name">Portfolio.</h1>
     </div>
-    <div id="homer">
-      <img id="photo" src="photos/me/Untitled.jpg" alt="">
+    <div id="r-nav">
+      
     </div>
-  </div>
-  <!--About Me-->
-  <div id="about">
-    <div id="bouttitle">
-      <h3 id="abouttitle">About Me</h3>
+  </nav>
+  <div style="width: 100%; height: 50px;"></div>
+
+  <!-- Banner -->
+  <div id="banner">
+    <div id="t-banner">
+      <img id="me" src="photos/me.jpg" alt="">
     </div>
-      <div id="boutsec">
-        <div id="boutl">
-          <img id="meagain" src="photos/me/Untitled.jpg" alt="">
+    <div id="b-banner">
+      <h1 id="my-des">Hi, I'm <span style="color: #3a99ff;">Kasam Ibishi</span>,<br><span style="color: #3a99ff;">Full-Stack Developer</span></h1>
+      <div id="cv-soc">
+        <div id="socials">
+          <a href="https://github.com/kasamibishi"><img src="photos/socials/github.png" alt="" class="soc"></a>
+          <a href="https://www.linkedin.com/in/kasamibishi/"><img src="photos/socials/linkedin.png" alt="" class="soc"></a>
+          <a href="https://x.com/kasam_ibishi"><img src="photos/socials/twitter.png" alt="" class="soc"></a>
+          <a href="https://www.tiktok.com/@kasam_ibishi"><img src="photos/socials/tik-tok.png" alt="" class="soc"></a>
         </div>
-        <div id="boutr">
-          <p id="text">"Hello! My name is Kasam Ibishi, an ambitious and dedicated Full-Stack developer from North Macedonia,  with a passion for building responsive websites, also studying at the "Mother Teresa" University - Skopje, in the faculty of Informatics. Also I have completed multtple courses which in which i have 1 front-end  and 2 back-end developments certificates<br><br>Currently looking for junior front-end developer roles or internships to grow my skills in a real-world environment."</p>
-        </div>
+        <a href="cv/Kasam_Ibishi-CV.pdf" id="cv">Download CV</a>
       </div>
     </div>
   </div>
 
-  <!--Skills-->
-  <diV id="skills">
-    <div id="title">
-      <h2 id="skilltitle">Skills</h2>
+  <!-- About Me -->
+  <div id="about-me">
+    <div class="header">
+      <h1 class="h">About <span style="color: #3a99ff;">Me</span></h1>
     </div>
-    <div id="container">
-      <div class="skill"> 
-        <div class="logo">
-          <img src="photos/logos/html-5.png" alt="" class="slogo">
-        </div>
-        <div class="name">
-          <p class="sname">HTML</p>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="logo">
-          <img src="photos/logos/css-3.png" alt="" class="slogo">
-        </div>
-        <div class="name">
-          <p class="sname">CSS</p>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="logo">
-          <img src="photos/logos/bootstrap.png" alt="" class="slogo">
-        </div>
-        <div class="name">
-          <p class="sname">BootStrap</p>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="logo">
-          <img src="photos/logos/js.png" alt="" class="slogo">
-        </div>
-        <div class="name">
-          <p class="sname">JavaScript</p>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="logo">
-          <img src="photos/logos/social.png" alt="" class="slogo">
-        </div>
-        <div class="name">
-          <p class="sname">JQuery</p>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="logo">
-          <img src="photos/logos/php.png" alt="" class="slogo">
-        </div>
-        <div class="name">
-          <p class="sname">PHP</p>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="logo">
-          <img src="photos/logos/mysql-database.png" alt="" class="slogo">
-        </div>
-        <div class="name">
-          <p class="sname">MySql</p>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="logo">
-          <img src="photos/logos/c-sharp.png" alt="" class="slogo">
-        </div>
-        <div class="name">
-          <p class="sname">C Sharp</p>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="logo">
-          <img src="photos/logos/web.png" alt="" class="slogo">
-        </div>
-        <div class="name">
-          <p class="sname">ASP.NET Core</p>
-        </div>
-      </div>
-    </div>
-  </diV>
-
-  <!--Contact Me-->
-  <div id="contact">
-    <div id="contactcon">
-      <p>Get in touch!</p>
-      <h1 id="contacttitle">Contact Me</h1>
-      <div id="contacts">
-        <div class="contact">
-          <a href="tel: +38975221452">
-            <img src="photos/logos/phone-call.png" alt="" class="conlogo">
-          </a>
-        </div>
-        <div class="contact">
-          <a href="mailto: kasamibishi101@gmail.com">
-            <img src="photos/logos/mail.png" alt="" class="conlogo">
-          </a>
-        </div>
-        <div class="contact">
-          <a href="https://www.linkedin.com/in/kasamibishi/">
-            <img src="photos/logos/linkedin.png" alt="" class="conlogo">
-          </a>
-        </div>
-      </div>
-    </div>
+    
   </div>
-  <footer>
-    <p id="footer">Copyright &#169; 2025 Kasam Ibishi, All Rights Reserved</p>
-  </footer>
 </body>
 </html>
