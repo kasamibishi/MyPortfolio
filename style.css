@@ -168,7 +168,7 @@ nav
   background-color: #1d1d1d;
   width: 90%;
   height: max-content;
-  margin-top: 50px;
+  margin-top: 15px;
   margin-bottom: 60px;
   margin-left: 5%;
   border-radius: 25px;
@@ -192,7 +192,7 @@ nav
 {
   width: 100%;
   height: max-content;
-  margin-top: 50px;
+  margin-top: 15px;
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: auto;
@@ -249,7 +249,7 @@ nav
   margin-left: 10%;
   width: 80%;
   height: max-content;
-  margin-top: 50px;
+  margin-top: 15px;
   margin-bottom: 60px;
 }
 
@@ -274,7 +274,7 @@ nav
   width: 85%;
   height: max-content;
   margin-left: 7.5%;
-  margin-top: 50px;
+  margin-top: 15px;
   margin-bottom: 60px;
 }
 
