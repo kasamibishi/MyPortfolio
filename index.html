@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kasam Ibishi | Full-Stack Developer</title>
+  <meta name="description" content="Kasam Ibishi is a full-stack developer and Applied Programming student in Skopje, building web applications with C#, .NET Core, PHP and MySQL.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <nav class="nav__inner" aria-label="Primary">
+      <a class="nav__brand" href="#top">~/<span>kasam</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__inner container">
+        <h1 class="hero__title">Kasam Ibishi</h1>
+        <p class="hero__role">Full-Stack Developer</p>
+        <p class="hero__lead">I build web applications end to end: relational schemas, server-side logic in C# and PHP, and interfaces that stay fast, accessible and easy to maintain. Applied Programming student at MTU Skopje.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="about">
+      <h2 class="section__title">About</h2>
+      <div class="about">
+        <div class="about__text">
+          <p>I study Applied Programming at "Mother Teresa" University in Skopje and work across the whole stack: schema design in MySQL, back-end logic in C# / .NET Core and PHP, and front-end code in plain JavaScript.</p>
+          <p>I keep systems simple and predictable. I model the data first, keep business logic out of the presentation layer, and reach for the platform (semantic HTML, native CSS, standard browser APIs) before adding a dependency.</p>
+        </div>
+        <div class="about__side">
+          <figure class="about__photo">
+            <img src="me.jpeg" alt="Portrait of Kasam Ibishi" width="480" height="480" loading="lazy" decoding="async">
+          </figure>
+          <dl class="about__facts">
+            <div><dt class="about__label">Education</dt><dd>Applied Programming, "Mother Teresa" University</dd></div>
+            <div><dt class="about__label">Focus</dt><dd>Full-stack web development</dd></div>
+            <div><dt class="about__label">Location</dt><dd>Skopje</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills">
+        <div class="skills__group">
+          <h3 class="skills__name">Front-end</h3>
+          <p class="skills__note">Semantic markup, responsive layouts, DOM scripting.</p>
+          <ul class="tags">
+            <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">Bootstrap</li><li class="tag">JavaScript</li><li class="tag">jQuery</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__name">Back-end</h3>
+          <p class="skills__note">Server-side logic and APIs.</p>
+          <ul class="tags">
+            <li class="tag">PHP</li><li class="tag">C#</li><li class="tag">.NET Core</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__name">Database</h3>
+          <p class="skills__note">Relational schema design and querying.</p>
+          <ul class="tags">
+            <li class="tag">MySQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects">
+        <!-- Duplicate this block to add a project. -->
+        <article class="card">
+          <h3 class="card__title">Project name</h3>
+          <p class="card__desc">One or two sentences: the problem it solves, how you built it, and the result.</p>
+          <ul class="tags">
+            <li class="tag">C#</li><li class="tag">.NET Core</li><li class="tag">MySQL</li>
+          </ul>
+          <a class="card__link" href="https://github.com/your-username/repo-name" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Project name</h3>
+          <p class="card__desc">One or two sentences: the problem it solves, how you built it, and the result.</p>
+          <ul class="tags">
+            <li class="tag">PHP</li><li class="tag">MySQL</li><li class="tag">JavaScript</li>
+          </ul>
+          <a class="card__link" href="https://github.com/your-username/repo-name" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Project name</h3>
+          <p class="card__desc">One or two sentences: the problem it solves, how you built it, and the result.</p>
+          <ul class="tags">
+            <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+          </ul>
+          <a class="card__link" href="https://github.com/your-username/repo-name" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container reveal">
+      <h2 class="section__title">Contact</h2>
+      <p class="footer__text">Have a project or an opportunity to discuss? Email is the fastest way to reach me.</p>
+      <div class="footer__row">
+        <div class="footer__contact">
+          <a class="footer__link" href="mailto:kasamibishi101@gmail.com">kasamibishi101@gmail.com</a>
+          <a class="footer__link" href="tel:+38975221452">+389 75 221 452</a>
+        </div>
+        <div class="footer__social">
+          <a href="https://github.com/kasamibishi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://mk.linkedin.com/in/kasam-ibishi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span id="year">2026</span> Kasam Ibishi. Built with plain HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>
